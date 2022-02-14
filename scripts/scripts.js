@@ -1,6 +1,5 @@
 const baseUrl = "https://tribe.api.fdnd.nl/v1";
-const loader = document.querySelector(".loader");
-const main = document.querySelector("main");
+const loader = document.querySelector(".lds-grid")
 
 
 //Functions
@@ -11,20 +10,23 @@ async function getMembers() {
    await req.json()
    .then(function(json){
        console.log(json);
-    json.data.forEach(item => {
-        if(item.memberId ==15) {
-            document.querySelector("#surName").innerHTML = item.surname
-            document.querySelector("#nickName").innerHTML = item.nickname
-            document.querySelector("#githubHandle").innerHTML = item.githubHandle
-            document.querySelector("#bio").innerHTML = item.bio
-            document.querySelector("#url").innerHTML =item.url
-         
-        
-            // console.log(item)
-        }
-        // console.log(item.memberId)
-    });
-   })
+       hidePreloader()
+        json.data.forEach(item => {
+            if(item.memberId ==16) {
+                document.querySelector("#surName").innerHTML = item.surname
+                document.querySelector("#nickName").innerHTML = item.nickname
+                document.querySelector("#githubHandle").innerHTML = item.githubHandle
+                document.querySelector("#bio").innerHTML = item.bio
+                document.querySelector("#url").innerHTML =item.url
+            }
+        });
+    })
+
+   function hidePreloader() {
+       setTimeout(()=>{
+        loader.style.display = "none"
+       }, 1500)
+   }
 
 
 //    const data = json.data

@@ -33,16 +33,17 @@ background-image: url(assets/Hunter\ X\ Hunter\ 09.jpeg);
   z-index: 999;
   width: 100em;
   height: 100em;
-  background-color:rgb(92, 166, 235)
+  background: rgb(224,222,245);
+  background: linear-gradient(90deg, rgba(224,222,245,1) 0%, rgba(29,156,253,1) 100%, rgba(60,165,207,1) 100%);
 }
 .lds-grid div {
  position:absolute;
   width: 16px;
   height: 16px;
-  margin-left: 13em;
+  margin-left: 11em;
   margin-top: 20em;
   border-radius: 50%;
-  background: #fff;
+  background:  rgb(255, 255, 255);
   animation: lds-grid 1.2s linear infinite;
 }
 .lds-grid div:nth-child(1) {
@@ -99,7 +100,25 @@ background-image: url(assets/Hunter\ X\ Hunter\ 09.jpeg);
   }
 }
 
+.lds-grid p{
+font-family: 'Kalam';
+color: rgb(68, 125, 158);
+font-weight:bolder;
+position: absolute;
+left: 10%;
+top: 25%;
+}
 
+@media (min-width: 50rem){
+  .lds-grid div{
+   margin-left: 40em;
+  }
+
+  .lds-grid p{
+    position: absolute;
+    left: 39%;
+  }
+}
 
 
 #container {
@@ -270,4 +289,4 @@ margin-left:-4.2em;
     }
 
   
-}
+  }

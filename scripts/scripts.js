@@ -12,21 +12,24 @@ async function getMembers() {
        console.log(json);
        hidePreloader()
         json.data.forEach(item => {
-            if(item.memberId ==15) {
+            if(item.memberId ==9) {
                 document.querySelector("#surName").innerHTML = item.surname
                 document.querySelector("#nickName").innerHTML = item.nickname
                 document.querySelector("#githubHandle").innerHTML = item.githubHandle
                 document.querySelector("#bio").innerHTML = item.bio
                 document.querySelector("#url").innerHTML =item.url
             }
+
         });
     })
+function hidePreloader() {
+    setTimeout(()=>{
+     loader.style.display = "none"
+    }, 1500)
+}
+   
 
-   function hidePreloader() {
-       setTimeout(()=>{
-        loader.style.display = "none"
-       }, 1500)
-   }
+  
 
 
 //    const data = json.data
@@ -35,5 +38,6 @@ async function getMembers() {
     //    console.log(item)
 //    })
 //    console.log(json.data);
-}
 
+
+}

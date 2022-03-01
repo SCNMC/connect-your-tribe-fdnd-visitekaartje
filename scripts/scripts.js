@@ -1,4 +1,4 @@
-const baseUrl = "https://tribe.api.fdnd.nl/v1";
+const baseUrl = "https://tribe.api.fdnd.nl/v1"
 const loader = document.querySelector(".lds-grid")
 
 
@@ -12,12 +12,15 @@ async function getMembers() {
        console.log(json);
        hidePreloader()
         json.data.forEach(item => {
-            if(item.memberId ==9) {
+            if(item.memberId == 9) {
                 document.querySelector("#surName").innerHTML = item.surname
                 document.querySelector("#nickName").innerHTML = item.nickname
                 document.querySelector("#githubHandle").innerHTML = item.githubHandle
                 document.querySelector("#bio").innerHTML = item.bio
                 document.querySelector("#url").innerHTML =item.url
+                document.querySelector("avatar").image.src= avatar
+                
+                
             }
 
         });

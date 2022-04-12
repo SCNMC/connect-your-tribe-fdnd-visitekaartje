@@ -21,13 +21,14 @@
 Deze sprint staat in het teken van werken met API's. Daarom is de opdracht van een visitekaartje wederom terug! Alleen komt de informatie nu uit een API die je vervolgens renderd naar het visitekaartje.
 Het project dat je hier ziet is een visitekaartje met de benodigde informatie. 
 
+
 ## 💡Kenmerken
 Het ontwerp is geinspireerd op een licence card afkomstig van de serie HXH. HXH is een populaire anime serie uit Japan. Ik heb om dit ontwerp te kunnen bouwen voor mezelf eerst een breakdown schets gemaakt om te kijken hoe ik dit na kan bouwen. Vervolgens ben ik dit digitaal gaan uitwerken om een beter beeld te krijgen hoe dit eruit komt te zien. Daarna ben ik een prototype gaan bouwen in codepen. Nadat ik tevreden was over de uitkomst heb ik dit gemaakt in de Vs Code. 
 
 ### 🔛Javascript:
 Om ervoor te zorgen dat de informatie verschijnt op het visitekaartje moet ik de data uit de API halen. Dit heb ik gedaan door de aangeboden principes te gebruiken die ik in de les heb gekregen. Ik ben begonnen met mijn variablen boven aan te zetten en daarna pas de functies. Ik heb dit op deze manier gedaan:
 
-<img width="626" alt="Schermafbeelding 2022-04-12 om 14 25 18" src="https://user-images.githubusercontent.com/90189750/162961933-2196df30-70d6-4f58-874c-bd482ad62094.png">
+<img width="479" alt="Schermafbeelding 2022-04-12 om 23 29 51" src="https://user-images.githubusercontent.com/90189750/163057774-7d7e3421-25d6-4d59-9d60-db7d7a33ce4d.png">
 
 ### 🌀 Loader:
 Voordat het visitekaartje verschijnt heb ik een UI state toegeevoegd. Namelijk de loading state. Je komt eerst een loader te zien en terwijl je dit ziet word de data geladed. Wanneer dit gelukt is zie je de succes state, namelijk het visitekaartje!

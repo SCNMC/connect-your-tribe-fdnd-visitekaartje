@@ -4,12 +4,9 @@
 body{
 margin: 0;
 padding: 0;
-background-image: url(assets/Hunter\ X\ Hunter\ 09.jpeg);
+background-color: rgb(24, 24, 24);
 }
 
-:root{
-  color: var(#000000);
-}
 /*loader */
 /* .loader{
   position: fixed;
@@ -142,7 +139,7 @@ top: 25%;
   /* Styling */
   width: 30.8em;
   height:45em;
-    background: linear-gradient(to bottom, black 60%, #4096ee 10%);
+  background: linear-gradient(to bottom, black 60%, #4096ee 10%);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);  
   /* Card flipping effects */
   transform-style: preserve-3d;

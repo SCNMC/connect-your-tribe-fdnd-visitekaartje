@@ -10,30 +10,23 @@ const projectUrl = document.querySelector("#url");
 
 getMembers();
 async function getMembers() {
-	const req = await fetch(`${baseUrl}/member`);
-	await req.json().then(function (json) {
-		console.log(json);
-		hidePreloader();
-		json.data.forEach((item) => {
-			if (item.memberId == 15) {
-				// document.querySelector("#surName").innerHTML = item.surname
-				// document.querySelector("#nickName").innerHTML = item.nickname
-				// document.querySelector("#githubHandle").innerHTML = item.githubHandle
-				// document.querySelector("#bio").innerHTML = item.bio
-				// document.querySelector("#url").innerHTML =item.url
-				// document.querySelector("avatar").image.src= avatar
-				projectNickname.innerText = `${item.nickname}`;
-				projectSurname.innerText = `${item.surname}`;
-				projectGithub.innerText = `${item.githubHandle}`;
-				projectBio.innerText = `${item.bio}`;
-				projectUrl.innerText = `${item.url}`;
-			}
-		});
-	});
+	const response = await fetch(`${baseUrl}/member`);
+	const json = await response.json()
+	const member = json.data.find(member => member.memberId == 15)
+	hidePreloader();
+	renderData(member);
+}
 
-	function hidePreloader() {
-		setTimeout(() => {
-			loader.style.display = "none";
-		}, 1500);
-	}
+function renderData(item) {
+	projectNickname.innerText = `${item.nickname}`;
+	projectSurname.innerText = `${item.surname}`;
+	projectGithub.innerText = `${item.githubHandle}`;
+	projectBio.innerText = `${item.bio}`;
+	projectUrl.innerText = `${item.url}`;
+}
+
+function hidePreloader() {
+	setTimeout(() => {
+		loader.style.display = "none";
+	}, 1500);
 }

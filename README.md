@@ -33,6 +33,8 @@ Om ervoor te zorgen dat de informatie verschijnt op het visitekaartje moet ik de
 ### 🌀 Loader:
 Voordat het visitekaartje verschijnt heb ik een UI state toegeevoegd. Namelijk de loading state. Je komt eerst een loader te zien en terwijl je dit ziet word de data geladed. Wanneer dit gelukt is zie je de succes state, namelijk het visitekaartje!
 
+### Empty state:
+
 ## Installatie
 Fork deze repo en open hem met Github Desktop!
 ## Gebruik

@@ -277,6 +277,34 @@ margin-left:-4.2em;
 
 }
 
+.error{
+  color: #4096ee;
+}
+.error p{
+  color: #4096ee;
+}
+
+noscript {
+  position: absolute;
+  background-color: black;
+  color: #4096ee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+noscript p{
+  font-weight: bold;
+}
+
+noscript img{
+  width: 30em;
+}
 @media (max-width:700px) {
   .card { 
     transform: scale(.5); 

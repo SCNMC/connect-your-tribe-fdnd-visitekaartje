@@ -4,7 +4,7 @@
 body{
 margin: 0;
 padding: 0;
-background-color: rgb(24, 24, 24);
+background-color:#293241;
 }
 
 /*loader */
@@ -31,13 +31,13 @@ background-color: rgb(24, 24, 24);
   width: 100em;
   height: 100em;
   background: rgb(224,222,245);
-  background: linear-gradient(90deg, rgba(224,222,245,1) 0%, rgba(29,156,253,1) 100%, rgba(60,165,207,1) 100%);
+  background: #293241;
 }
 .lds-grid div {
  position:absolute;
   width: 16px;
   height: 16px;
-  margin-left: 11em;
+  margin-left: 13em;
   margin-top: 20em;
   border-radius: 50%;
   background:  rgb(255, 255, 255);
@@ -99,7 +99,7 @@ background-color: rgb(24, 24, 24);
 
 .lds-grid p{
 font-family: 'Kalam';
-color: rgb(68, 125, 158);
+color: #ffff;
 font-weight:bolder;
 position: absolute;
 left: 10%;
@@ -196,7 +196,7 @@ font-size:30px;
   display:flex;
   justify-content: center;
   margin-top:-8em;
-   margin-left: 0.3em;
+   margin-left: 0.7em;
   height:6em;
   width: 27em;
   font-size: 1em;

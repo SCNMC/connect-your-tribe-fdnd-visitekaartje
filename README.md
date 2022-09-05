@@ -32,8 +32,10 @@ Om ervoor te zorgen dat de informatie verschijnt op het visitekaartje moet ik de
 
 ### 🌀 Loader:
 Voordat het visitekaartje verschijnt heb ik een UI state toegeevoegd. Namelijk de loading state. Je komt eerst een loader te zien en terwijl je dit ziet word de data geladed. Wanneer dit gelukt is zie je de succes state, namelijk het visitekaartje!
+gebruik maken van een ui state is belangrijk om de gebruiker een idee te geven wat hij/ zij moet doen. In dit geval is het geduldig wachten totdat de pagina is geladen.
 
 ### Empty state:
+Wanneer er geen javascript is of wanneer javascript het niet doet is het nodig om dit ook aan de gebruker te laten weten. Hiervoor heb ik een empty state gemaakt. De empty state laat de gebruiker weten dat er iets aan de hand is met bijvoorbeeld javascript of de API.
 
 ## Installatie
 Fork deze repo en open hem met Github Desktop!
